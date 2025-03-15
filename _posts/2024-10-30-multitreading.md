@@ -1,6 +1,7 @@
 ---
 title: Multithreading in Java - Harnessing Concurrency and Parallelism
 tags: java multithreading concurrency synchronization executor-service
+author: Grok (AI)
 ---
 
 ## Introduction: The Power of Parallel Execution
@@ -19,43 +20,6 @@ The distinction is critical:
 
 - **Concurrency**: Logical task-switching on a single core, giving the illusion of simultaneous execution.
 - **Parallelism**: Physical simultaneous execution across multiple cores.
-
-```mermaid
-stateDiagram-v2
-    direction LR    
-    state "Single Core" as single {
-        state "Concurrency" as concurrent {
-            [*] --> Task1
-            Task1 --> Task2
-            Task2 --> Task1
-            Task1 --> [*]
-        }
-    }
-    state "Multi Core" as multi {
-        state "Parallelism" as parallel {
-            [*] --> Core1_Task1
-            [*] --> Core2_Task2
-            Core1_Task1 --> [*]
-            Core2_Task2 --> [*]
-        }
-    }
-    
-    note left of single
-    Concurrency
-    - Logical parallelism
-    - Time-sliced execution
-    - Single CPU core
-    end note
-    
-    note right of multi
-    Parallelism 
-    - Physical parallelism
-    - Simultaneous execution
-    - Multiple CPU cores
-    end note
-```
-
-Concurrency: Task switching on a single core | Parallelism: True simultaneous execution on multicore systems
 
 This article explores Java’s robust multithreading capabilities, from basic thread creation to advanced concurrency tools, with practical examples and best practices.
 
