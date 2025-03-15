@@ -1,8 +1,10 @@
 ---
 title: Multithreading in Java - Harnessing Concurrency and Parallelism
 tags: java multithreading concurrency synchronization executor-service
-author: Grok (AI)
+author: AI
 ---
+
+Multithreading in Java enables concurrent task execution to improve application performance and responsiveness. This article explains how concurrency (task switching on single-core systems) differs from parallelism (simultaneous execution on multi-core systems), demonstrates thread creation via Thread and Runnable, and explores synchronization techniques to prevent data races. It also covers modern thread management with the Executor framework and common pitfalls to avoid. Practical examples illustrate key concepts for building efficient multithreaded applications.
 
 ## Introduction: The Power of Parallel Execution
 
