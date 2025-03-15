@@ -15,54 +15,64 @@ Rather than focusing on specific programming languages or frameworks, the book t
 # Top 10 Takeaways
 
 1. Care About Your Craft
-Example: Instead of throwing together a quick-and-dirty script to meet a deadline, you refactor it to be readable and reusable, adding comments and consistent naming. Months later, a teammate thanks you because they could easily extend it without digging through a mess.
-
-Why: Pride in your work builds trust and saves time in the long run.
+    
+    **Example:** Instead of throwing together a quick-and-dirty script to meet a deadline, you refactor it to be readable and reusable, adding comments and consistent naming. Months later, a teammate thanks you because they could easily extend it without digging through a mess.
+    
+    **Why:** Pride in your work builds trust and saves time in the long run.
 
 2. DRY (Don't Repeat Yourself)
-Example: You notice the same validation logic for email addresses is copied across five functions in a web app. You extract it into a single validateEmail() function, so when the rules change (e.g., adding a new domain restriction), you update it in one place.
+    
+    **Example:** You notice the same validation logic for email addresses is copied across five functions in a web app. You extract it into a single validateEmail() function, so when the rules change (e.g., adding a new domain restriction), you update it in one place.
 
-Why: Duplication multiplies maintenance effort; DRY keeps changes centralized.
+    **Why:** Duplication multiplies maintenance effort; DRY keeps changes centralized.
 
 3. Fix Broken Windows
-Example: You spot a minor bug in a UI where a button’s hover state flickers. Instead of shrugging it off as "not critical," you fix it during your next commit. This prevents the codebase from accumulating sloppy defects that erode quality.
+    
+    **Example:** You spot a minor bug in a UI where a button’s hover state flickers. Instead of shrugging it off as "not critical," you fix it during your next commit. This prevents the codebase from accumulating sloppy defects that erode quality.
 
-Why: Small issues signal neglect, inviting bigger problems if ignored.
+    **Why:** Small issues signal neglect, inviting bigger problems if ignored.
 
 4. Be a Catalyst for Change
-Example: Your team’s manual deployment process is error-prone. You write a simple script to automate it and share it in a meeting. Seeing it work, others pitch in to refine it, and soon it’s part of the official workflow.
 
-Why: Starting small inspires collaboration and improvement without needing top-down approval.
+    **Example:** Your team’s manual deployment process is error-prone. You write a simple script to automate it and share it in a meeting. Seeing it work, others pitch in to refine it, and soon it’s part of the official workflow.
+
+    **Why:** Starting small inspires collaboration and improvement without needing top-down approval.
 
 5. Use Abstraction and Orthogonality
-Example: In a game app, you separate the physics engine (how objects move) from the rendering logic (how they look). When you later swap out the 2D renderer for a 3D one, the physics code doesn’t need any changes.
 
-Why: Independent components reduce complexity and make upgrades painless.
+    **Example:** In a game app, you separate the physics engine (how objects move) from the rendering logic (how they look). When you later swap out the 2D renderer for a 3D one, the physics code doesn’t need any changes.
+
+    **Why:** Independent components reduce complexity and make upgrades painless.
 
 6. Automate Where Possible
-Example: You’re tired of manually resizing images for a website. You write a Python script with Pillow to batch-process uploads to the right dimensions, integrating it into the build pipeline.
+    
+    **Example:** You’re tired of manually resizing images for a website. You write a Python script with Pillow to batch-process uploads to the right dimensions, integrating it into the build pipeline.
 
-Why: Automation eliminates tedious repetition and ensures consistency.
+    **Why:** Automation eliminates tedious repetition and ensures consistency.
 
 7. Write Code That’s Easy to Change (ETC)
-Example: Instead of hardcoding a tax rate (e.g., tax = price * 0.08) in a shopping cart app, you store it in a config file. When the rate changes, you update the file instead of hunting through the codebase.
 
-Why: Flexible code adapts to inevitable shifts in requirements.
+    **Example:** Instead of hardcoding a tax rate (e.g., tax = price * 0.08) in a shopping cart app, you store it in a config file. When the rate changes, you update the file instead of hunting through the codebase.
+
+    **Why:** Flexible code adapts to inevitable shifts in requirements.
 
 8. Test Ruthlessly and Continuously
-Example: For a calculator app, you write unit tests for add(), subtract(), etc. When a new dev accidentally breaks multiply() by tweaking shared logic, the tests fail immediately, catching the bug before it hits production.
 
-Why: Tests act as a safety net and living documentation.
+    **Example:** For a calculator app, you write unit tests for add(), subtract(), etc. When a new dev accidentally breaks multiply() by tweaking shared logic, the tests fail immediately, catching the bug before it hits production.
+
+    **Why:** Tests act as a safety net and living documentation.
 
 9. Learn to Estimate and Communicate
-Example: Your manager asks how long a feature will take. You break it into tasks (UI: 2 days, backend: 3 days, testing: 1 day), estimate 6 days total, and say, “Assuming no surprises, about a week—I'll update you if blockers pop up.” When a database issue adds a day, you notify them promptly.
 
-Why: Realistic estimates and updates build credibility and manage expectations.
+    **Example:** Your manager asks how long a feature will take. You break it into tasks (UI: 2 days, backend: 3 days, testing: 1 day), estimate 6 days total, and say, “Assuming no surprises, about a week—I'll update you if blockers pop up.” When a database issue adds a day, you notify them promptly.
+
+    **Why:** Realistic estimates and updates build credibility and manage expectations.
 
 10. Keep Learning and Stay Curious
-Example: You’ve only used Python, but a project requires Rust. You spend a weekend on a Rust tutorial, then prototype a small tool with it. Soon, you’re contributing to the project and adding a new skill to your resume.
 
-Why: Staying current opens doors and keeps you versatile in a fast-moving field.
+    **Example:** You’ve only used Python, but a project requires Rust. You spend a weekend on a Rust tutorial, then prototype a small tool with it. Soon, you’re contributing to the project and adding a new skill to your resume.
+
+    **Why:** Staying current opens doors and keeps you versatile in a fast-moving field.
 
 
 
